@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Main2Activity">
+
+    <ImageView
+        android:id="@+id/rock"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rock" />
+
+    <ImageView
+        android:id="@+id/paper"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/scissors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rock"
+        app:srcCompat="@drawable/paper" />
+
+    <ImageView
+        android:id="@+id/scissors"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/scissors" />
+
+    <TextView
+        android:id="@+id/tvp1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="#EDB1B1"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/paper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rock"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="#B1B8ED"
+        android:gravity="center"
+        android:text="@string/p1_s_turn"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvp1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rock"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvp2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="#B9EDB1"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scissors"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paper" />
+
+    <Button
+        android:id="@+id/ta"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:background="#000000"
+        android:text="@string/play_again"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/paper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/paper" />
+</androidx.constraintlayout.widget.ConstraintLayout>

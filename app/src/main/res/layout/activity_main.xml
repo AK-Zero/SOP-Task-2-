@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F5F5"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:background="#ECB3AC"
+        android:gravity="center"
+        android:text="@string/rock_paper_scissors"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ev1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="@string/enter_player_1_s_name"
+        android:inputType="textPersonName"
+        android:text="@string/a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <EditText
+        android:id="@+id/ev2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/enter_player_2_s_name"
+        android:inputType="textPersonName"
+        android:text="@string/a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/evn3" />
+
+    <EditText
+        android:id="@+id/evn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/enter_number_of_rounds"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ev1" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#ECB3AC"
+        android:text="@string/start_game"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ev2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFF704"
+        app:layout_constraintBottom_toBottomOf="@+id/ev2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ev1"
+        app:layout_constraintTop_toTopOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#A8E8E6"
+        app:layout_constraintBottom_toBottomOf="@+id/ev2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ev2"
+        app:layout_constraintTop_toTopOf="@+id/ev2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

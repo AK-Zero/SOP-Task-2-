@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Rock Paper Scissors</string>
+    <string name="enter_player_1_s_name">Enter Player 1\'s Name</string>
+    <string name="rock_paper_scissors"><![CDATA[Rock , Paper & Scissors]]></string>
+    <string name="enter_player_2_s_name">Enter Player 2\'s Name</string>
+    <string name="enter_number_of_rounds">Enter Number of Rounds</string>
+    <string name="start_game">Start Game!</string>
+    <string name="p1_s_turn">P1\'s Turn</string>
+    <string name="p2_s_turn">P2\'s Turn</string>
+    <string name="a"> </string>
+    <string name="play_again">Play Again? Click Here…</string>
+    <string name="choose_mode">Choose Mode</string>
+    <string name="v_s_device">V/S Device</string>
+    <string name="v_s_human">V/S Human</string>
+</resources>
